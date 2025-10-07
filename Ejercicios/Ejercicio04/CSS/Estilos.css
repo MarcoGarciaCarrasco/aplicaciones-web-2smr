@@ -1,0 +1,32 @@
+/*Cuando es un id, ponemos delante # */
+
+#titulo {
+    color: red;
+    
+}
+
+.trabajador {
+    background-color: gray;
+    
+}
+
+#titulo1{
+    color: blue;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#titulo2{
+    color: green;
+    text-align: center;
+    padding-top: 15px;
+}
+
+span {
+    text-decoration: underline;
+
+}
+
+.mi-div {
+    border: 3px solid black;
+}
