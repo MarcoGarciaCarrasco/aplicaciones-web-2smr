@@ -1,0 +1,16 @@
+body{
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+
+.menu-arriba{
+
+    background-color: red;
+
+}
+.menu-arriba ul{
+    list-style: none;
+    display: flex;              /* Usamos Flexbox para alinear los elementos de una lista*/
+}
+
