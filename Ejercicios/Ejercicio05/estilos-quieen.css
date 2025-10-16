@@ -1,0 +1,36 @@
+h3 {
+    font-size: 16px;
+    color: grey;
+    font-style: bold;
+}
+
+
+h1 , h2 , h3 p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span {
+    padding-left: 75px;
+}
+
+table , tr , td {
+    font-size: 14px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+
+.cabecera {
+    color: white;
+    background-color: #666;
+    text-align: center;
+}
+
+.pie-de-tabla {
+    background-color: #ccc;
+}
+
+.cuerpo {
+    background-color: #fff;
+}
