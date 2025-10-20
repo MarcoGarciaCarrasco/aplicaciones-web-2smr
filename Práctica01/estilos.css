@@ -6,7 +6,7 @@
     display: flex;
     }
 
-.cabecera {
+header {
     background-color: #F5a623;
     color: white;
     display: flex;
@@ -15,6 +15,7 @@
 }
 
 header h1 {
+    color: white;
     margin: 0;
 }
 
@@ -57,7 +58,7 @@ li {
 }
 
 .elaboracion {
-    line-height: 1.6.;
+    line-height: 1.6;
 }
 
 .ingredientes {
@@ -100,5 +101,14 @@ h2 {
 }
 
 p {
-    line-height: 1.6.;
+    line-height: 1.6;
+}
+
+.caracteristicas {
+    font-weight: bold;
+    color: #F5a623;
+}
+
+span {
+    text-align: left;
 }
