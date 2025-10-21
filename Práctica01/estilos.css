@@ -8,7 +8,6 @@
 
 header {
     background-color: #F5a623;
-    color: white;
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -17,9 +16,9 @@ header {
 header h1 {
     color: white;
     margin: 0;
-}
+} 
 
-body {
+.cuerpo-web {
     background-color: beige;
     padding: 2rem;
 }
@@ -36,9 +35,9 @@ footer {
     color: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    text-align: center;
     border-radius: 10px;
     padding: 10px;
+    margin: auto;
 }
 
 .imagen-receta {
@@ -68,6 +67,7 @@ li {
 table {
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
 }
 
 th {
