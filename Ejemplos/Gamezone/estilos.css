@@ -1,0 +1,99 @@
+/* Reset y base */
+/* box sizing: para que tenga en cuenta el padding y el margin en el tamaño total */
+* {
+    box-sizing: border-box;
+}
+
+/*Establecemos altura completa de página */
+
+html , body {
+    height: 100%;
+}
+
+/*Configuración general del body*/
+
+body {
+    margin: 0; ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #f0f0f0;
+}
+
+
+/* titulo de la cabecera sin margenes extra y color destacado*/
+
+.titulo {
+    margin: 0;
+    color: #2c3e50;
+}
+
+
+/* Zona principal: Aplicamos relleno */
+
+#contenido-principal {
+    padding: 1rem;
+}
+
+/* Centramos y rellenamos la cabecera */
+.cabecera {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Clase "tarjeta": Usado para agrupar secciones visualmente */
+
+.tarjeta {
+    background: grey;
+    width: min(900px, 95%);
+    margin: 1rem auto;  /* Centramos el contenido */ 
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid peachpuff;
+}
+
+/* Listas en dos columnas: usamos flexbox para alinear dos elementos en horizontal */
+
+
+
+/* Estilo pie de página */
+
+.pie {
+    text-align: center;
+    color: #29b8c2;
+    font-size: 14px;
+    background: grey;
+    padding: 1rem;
+}
+
+.listas {
+    display: flex;  /* Contenedor flexible */
+    flex-direction: row;    /* Los items se coloquen en filas */
+    gap: 2rem;  /* Hueco entre columnas */
+    flex-wrap: wrap;    /* Permite saltar a la siguiente linea en pantallas pequeñas */
+    /* flex-flow: row wrap; */
+}
+
+/* Ajustes visuales de las listas */
+
+.lista {
+    padding-left: 20px;     /* Espacio para las viñetas */
+
+}
+
+.lista li {
+    margin: 0.25rem 0;  /* Margenes de los li dentro de la clase lista */
+}
+
+/* Tabla: 
+    -width:ocupe todo el ancho
+    -border-collapse:unir los bordes internos
+    -*/
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-top: 1rem;
+}
+
