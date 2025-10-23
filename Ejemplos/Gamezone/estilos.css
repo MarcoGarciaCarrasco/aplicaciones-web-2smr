@@ -10,40 +10,87 @@ html , body {
     height: 100%;
 }
 
-/*Configuración general del body*/
+/* El body se convierte en contenedor flex
+    -flex -direction:column -> apila verticalmente el header, main y footer
+    -min-height: 100vh -> ocupa toda la altura de la ventana (vh = viewport height
+*/
+
 
 body {
     margin: 0; ;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura total del viewport */
 }
 
 
 /* titulo de la cabecera sin margenes extra y color destacado*/
 
-.titulo {
+/*.titulo {
     margin: 0;
     color: #2c3e50;
+}*/
+
+/* Menu de navegacion en horizontal  con flex*/
+
+.menu {
+    list-style-type: none ;
+    display: flex;  /* Para colocar los enlaces/items en linea*/
+    flex-direction: row;    /* Por defecto es row, por tanto podemos prescindir de esta linea */
+    gap: 1.5rem;    /* Este es el espacio entre enlaces */
 }
 
+.menu a {
+    color: #fff;
+    text-decoration: none;  /* Elimina el subrayado */
+    font-weight: bold;  /* Aplica negrita a los enlaces */
+    padding: 1rem;
+}
+
+.menu a:hover {
+    color: #E74c3c;
+    background: white;
+}
 
 /* Zona principal: Aplicamos relleno */
 
 #contenido-principal {
     padding: 1rem;
+    flex-grow: 1;   /* Importante para empujar */
+    display: flex;  /* Convierto al main como contenedor flexible */
+    flex-direction: column; 
+    gap: 0.5rem;
 }
 
+/*  */
+
 /* Centramos y rellenamos la cabecera */
+/* CABEZERA con FLEX: dos zonas -> logo/titulo (marca) y menú (nav) */ 
 .cabecera {
     text-align: center;
     padding: 1em;
+    display: flex;
+    color: #fff ;
+    background: #2c3e50 ;
+    justify-content: space-between;
+    align-items: center;    /* Centra verticalmente */
+}
+
+/* Tamaño de la imagen (Logo) */
+
+.logo {
+    height: 100px;
+    width: auto;
+    /*display: block;*/
 }
 
 /* Clase "tarjeta": Usado para agrupar secciones visualmente */
 
 .tarjeta {
-    background: grey;
+    background: #fff;
     width: min(900px, 95%);
     margin: 1rem auto;  /* Centramos el contenido */ 
     border-radius: 12px;
@@ -55,14 +102,35 @@ body {
 /* Listas en dos columnas: usamos flexbox para alinear dos elementos en horizontal */
 
 
+/* Border y relleno de la tabla */
+
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Cabezera de la tabla con estilo diferenciado */
+
+.tabla th{
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+}
+
+/* Contenido de tabla alineado a la izquiera */
+
+.tabla td {
+    text-align: left;
+    white-space: nowrap; /* Evita saltos de linea en celdas */
+}
 
 /* Estilo pie de página */
 
 .pie {
     text-align: center;
-    color: #29b8c2;
+    color: #ecf0f1;
     font-size: 14px;
-    background: grey;
+    background: #2c3e50;
     padding: 1rem;
 }
 
