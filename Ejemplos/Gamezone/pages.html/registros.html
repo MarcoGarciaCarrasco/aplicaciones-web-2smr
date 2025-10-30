@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros</title>
+    <link rel="stylesheet" href="../estilos.css">
+
+</head>
+<body>
+    <header class="cabecera">
+        <div>
+            <img src="../imageness/gamezone-logo.png" alt="Logotipo GameZone" class="logo">
+        </div>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Formulario de registro -->
+        <section class="tarjeta">
+            <h2>Registro de usuario</h2>
+            <form name="register" action="registro.html" method="post">
+
+                <!-- Campo de texto -->
+                <label for="nombre">Nombre de usuario: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" required>  <!-- Required hace o convierte al campo en obligatorio -->
+                <!-- Contraseña -->
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave" minlength="6" maxlength="12" required>
+                <!-- Campo de email -->
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                <!-- Campo DNI/NIE -->
+                <label for="DNI">DNI o NIE</label>
+                <input type="text" id="dni" name="identidad" placeholder="12345678A/X123456789L" pattern="(([0-9]{8})|([X-Zx-z]{1}[0-9]{7}))[A-Za-z]{1}" required>
+                <!-- Botón de envio -->
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        &copy; 2025 Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
