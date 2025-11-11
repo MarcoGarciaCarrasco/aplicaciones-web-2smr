@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Incidenciario</title>
     <author name="Marco García Carrasco">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="cuerpo-pagina">
     <header class="cabecera">
-        <img src="imagenes/Logo-CPIFP-AlanTuring.webp" alt="">
+        <div class="logo">
+            <img src="imagenes/Logo-CPIFP-AlanTuring.webp" alt="Logo del centro">
+        </div>
     </header>
-    <form class="contenido-principal">
-        <fieldset>
-            <legend>Nueva Incidencia</legend>
-                <div>
+    <form>
+        <fieldset class="fildset">
+            <legend><span>Nueva Incidencia</span></legend>
+                <div class="ElementosFormulario">
                     <label for="profesor">Profesor *:</label>
                     <input id="profesor" type="text" placeholder="Escribe tu nombre aquí">
                 </div>
-                <div>
+                <div class="ElementosFormulario">
                     <label for="correo">Correo Electrónico *:</label>
                     <input id="correo" type="email" placeholder="Escribe tu correo aquí">
                 </div>
-                <div>
+                <div class="ElementosFormulario">
                     <label for="Departamento">Departamento *:</label>
                     <select name="categoria" id="categoria">
                         <option selected disabled>Informática</option>
@@ -32,31 +34,41 @@
                         <option value="programacion">Programación</option>
                     </select>
                 </div>
-                <div>
+                <div class="ElementosFormulario">
                     <label for="aula">Aula *:</label>
                     <input id="aula" type="text" placeholder="Indica aquí el aula de la incidencia">
                 </div>
-                <div>
+                <div class="ElementosFormulario">
                     <label for="dia incidencia">Dia de la Incidencia *:</label>
                     <input id="dia incidencia" type="date">
                 </div>
-                <div>
+                <div class="ElementosFormulario">
                     <label for="hora incidencia">Hora de la Incidencia *:</label>
                     <input id="nombre" type="time">
                 </div>
-                <div>
+                <div class="ElementosFormulario">
                     <label for="descripcion">Descripción de la Incidencia *: </label>
-                    <input required type="text">
+                    <input required name="descripcion" id="descripcion">
                 </div>
-                <div>
-                    <label for="imagen">Imagen de la incidencia (opcional) *:</label>
-                    <input type="submit" value="Elegir archivo">
+                <div class="ElementosFormulario">
+                    <label for="imagen">Imagen de la incidencia (opcional):</label>
+                    <span class="archivo"><input type="file" value="Elegir archivo"></span>
+                </div>
+                <div class="ElementosFormulario">
+                    <button type="submit">Enviar incidencia</button>
+                    <button type="submit">Borrar formulario</button>
                 </div>
         </fieldset>
     </form>
 
-    <footer class="Pie">
+    <footer class="futer">
         <h3>Síguenos</h3>
+        <a href="https://www.facebook.com/cpifpalanturing" target="_blank"><img src="imagenes/icons8-facebook-48.png" alt="Pagina FB AT"></a>
+        <a href="https://x.com/cpifpalanturing" target="_blank"><img src="imagenes/icons8-twitter-48.png" alt="Pagina TWT AT"></a>
+        <a href="https://www.instagram.com/cpifpalanturing" target="_blank"><img src="imagenes/icons8-instagram-48.png" alt="Pagina IG AT"></a>
+        <a href="https://www.youtube.com/@cpifpalanturing" target="_blank"><img src="imagenes/icons8-youtube-48.png" alt="Pagina YT AT"></a>
+        <a href="https://fpalanturing.es" target="_blank"><img src="imagenes/icons8-website-48.png" alt="Pagina AT"></a>
+        </footer>
     </footer>
 </body>
 </html>

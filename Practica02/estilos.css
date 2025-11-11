@@ -4,7 +4,6 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
 }
 
 .cabecera{
@@ -18,13 +17,28 @@ header img {
     height: 110px;
 }
 
-form{
-    background-color: beige;
-    color: firebrick;
-    border-color: darkgoldenrod;
-    border-style: 9px;
+.fildset{
+    background-color: #F4F1ED ;
+    color: darkgoldenrod;
+    border: solid 9px;
     border-radius: 7px;
     width: 400px;
+}
+
+label{
+    color: firebrick;
+}
+
+.archivo{
+    color: firebrick;
+}
+
+.ElementosFormulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: left;
+    margin-bottom: 5px;
 }
 
 legend{
@@ -40,29 +54,17 @@ div{
     margin-bottom: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Pie{
+.futer{
     background-color: #333;
     color: white;
     text-align: center;
     padding: 5px;
 }
 
-.Pie h3{
+.futer h3{
     color: #F7C600;
+}
+
+span{
+    font-weight: bold;
 }
