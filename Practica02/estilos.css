@@ -1,0 +1,68 @@
+.cuerpo-pagina{
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.cabecera{
+    padding: 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+header img {
+    width: 300px;
+    height: 110px;
+}
+
+form{
+    background-color: beige;
+    color: firebrick;
+    border-color: darkgoldenrod;
+    border-style: 9px;
+    border-radius: 7px;
+    width: 400px;
+}
+
+legend{
+    color: darkblue;
+    font-style: bold;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Pie{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.Pie h3{
+    color: #F7C600;
+}

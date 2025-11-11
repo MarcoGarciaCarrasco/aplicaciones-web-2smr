@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <author name="Marco García Carrasco">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="cuerpo-pagina">
+    <header class="cabecera">
+        <img src="imagenes/Logo-CPIFP-AlanTuring.webp" alt="">
+    </header>
+    <form class="contenido-principal">
+        <fieldset>
+            <legend>Nueva Incidencia</legend>
+                <div>
+                    <label for="profesor">Profesor *:</label>
+                    <input id="profesor" type="text" placeholder="Escribe tu nombre aquí">
+                </div>
+                <div>
+                    <label for="correo">Correo Electrónico *:</label>
+                    <input id="correo" type="email" placeholder="Escribe tu correo aquí">
+                </div>
+                <div>
+                    <label for="Departamento">Departamento *:</label>
+                    <select name="categoria" id="categoria">
+                        <option selected disabled>Informática</option>
+                        <option value="redes">Redes</option>
+                        <option value="ofimatica">Ofimática</option>
+                        <option value="informatica">Informática</option>
+                        <option value="programacion">Programación</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="aula">Aula *:</label>
+                    <input id="aula" type="text" placeholder="Indica aquí el aula de la incidencia">
+                </div>
+                <div>
+                    <label for="dia incidencia">Dia de la Incidencia *:</label>
+                    <input id="dia incidencia" type="date">
+                </div>
+                <div>
+                    <label for="hora incidencia">Hora de la Incidencia *:</label>
+                    <input id="nombre" type="time">
+                </div>
+                <div>
+                    <label for="descripcion">Descripción de la Incidencia *: </label>
+                    <input required type="text">
+                </div>
+                <div>
+                    <label for="imagen">Imagen de la incidencia (opcional) *:</label>
+                    <input type="submit" value="Elegir archivo">
+                </div>
+        </fieldset>
+    </form>
+
+    <footer class="Pie">
+        <h3>Síguenos</h3>
+    </footer>
+</body>
+</html>
