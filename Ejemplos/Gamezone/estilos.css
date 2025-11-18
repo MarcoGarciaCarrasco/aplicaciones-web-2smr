@@ -234,7 +234,7 @@ Seccion Tienda
 
 /* Contenedor de las cards */
 
-.listas-cards--flex{
+.lista-cards--flex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -299,9 +299,11 @@ Seccion Tienda
 .grid-container{
     display: grid;
     grid-template-columns: 200px 200px 200px; /* Tres columnas de tamaño fijo */
-    grid-template-rows: 100px 100px;
-    gap: 15px;
-    justify-content: center;
+    grid-template-rows: 100px 100px;    /* 2 Filas de tamaño fijo */
+    row-gap: 5px;
+    column-gap: 30px;
+    gap: 15px;      /* Separacion uniforme entre celdas */
+    justify-content: center;    /* Centra toda la cuadricula dentro del section */
     background-color: grey;
     padding: 10px;
 }
@@ -313,4 +315,43 @@ Seccion Tienda
 .grid-container :nth-child(5) {background-color: green;}
 .grid-container :nth-child(6) {background-color: darkred;}
 
+
+.contenedor-areas {
+    display: grid;
+    min-height: 400px;
+
+    /* Fijamos número de columnas y filas */
+    grid-template-columns: 200px 3fr 1fr;
+    grid-template-rows: 2fr 5fr 1fr;
+    gap: 15px;
+    grid-template-areas: 
+    "cabecera   cabecera    cabecera" 
+    "menu       principal   lateral"
+    "pie        pie         pie";
+}
+
+.area-header{
+    grid-area: cabecera;
+    background-color: blue;
+}
+
+.area-menu{
+    grid-area: menu;
+    background-color: green;
+}
+
+.area-main{
+    grid-area: principal;
+    background-color: goldenrod;
+}
+
+.area-aside{
+    grid-area: lateral;
+    background-color: aquamarine;
+}
+
+.area-footer{
+    grid-area: pie;
+    background-color: #b60000;
+}
 
