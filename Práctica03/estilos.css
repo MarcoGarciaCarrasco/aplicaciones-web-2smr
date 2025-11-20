@@ -1,0 +1,14 @@
+.tarjeta {
+    background: #fff;
+    width: min(900px, 95%);
+    margin: 1rem auto;  /* Centramos el contenido */ 
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid peachpuff;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
